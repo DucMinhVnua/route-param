@@ -1,0 +1,13 @@
+h1 Search
+input(type="text" placeholder="Name")
+a(href="/Add") Add
+h1 ALL USERS
+ul
+    each user in users
+        li #{user.user}
+            span    
+            span
+                a(href="/views/"+ user.id) View
+                span   
+            span
+                a(href="/todos" + "/delete/" + user.id) Delete   
